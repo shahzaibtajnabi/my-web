@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SG-Electronic shop</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body style="background-color: black;">
+    <a href="index.html"><button>HOME</button></a>
+  
+    <center>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        <div style="background-color: yellow; width: 50%; height: 500px; color:yellow;" >
+        <br>
+        <h1 style="color: black;">Registeration form</h1>
+        <br>
+        <br>
+        <br>
+        <h1></h1>
+     <form>
+    <label style="color: black;"> Full Name</label>    
+    <input type="text" name="" id="ufullname" placeholder="Enter Your Full Name "> <br>
+        <br>   
+           
+
+    <label style="color: black;">username</label>    
+    <input type="text" name="" id="uname" placeholder="Enter Your usernamer"><br>
+    <br>
+    <label style="color: black;">Email</label>    
+    <input type="email" name="" id="uemail" placeholder="Enter Your Email"> <br>
+    <br>
+      
+
+    <label style="color: black;">Phone Number</label>    
+    <input type="number" name="" id="unumber" placeholder="Enter Your Phone number"> <br>
+    <br>
+    <label style="color: black;">Password</label>    
+    <input type="password" name="" id="upassword" placeholder="Enter Your Password"> <br>
+    <br>
+    <label style="color: black;">Confirm Password</label>
+
+    <input type="password" name="" id="uconfirmpassword" placeholder="Enter Your Confirm Passsword"><br>
+    <br>
+    <br>
+
+    <button  type="submit" onclick="btnsubmit()"> Submit</button>
+    
+    </form>
+        </div>
+    </center>
+    
+ <!-- FOOTER END -->
+                  
+ <script
+ src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+ integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+ crossorigin="anonymous"
+></script>
+
+<script
+ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+ integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+ crossorigin="anonymous"
+></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+</body>
+</html>
+<script>
+function btnsubmit(){
+    var fullname =document.getElementById('ufullname').value;
+    var username=document.getElementById('uname').value;
+    var  Email =document.getElementById('uemail').value;
+    var  phonenumber =document.getElementById('unumber').value;
+    var password =document.getElementById('upassword').value;
+    var confirmpassword =document.getElementById('uconfirmpassword').value;
+
+    localStorage.setItem("ufullname",fullname)
+    localStorage.setItem("uname",username)
+
+    localStorage.setItem("uemail",Email)
+    localStorage.setItem("unumber",phonenumber)
+    localStorage.setItem("upassword",password)
+    localStorage.setItem("uconfirmpassword",confirmpassword)
+    
+
+
+    if(fullname ==""|| username =="" || Email =="" || phonenumber ==""||  password ==""|| confirmpassword ==""){
+       alert("Error:Something Went Wrong.User Registration failed"
+    )
+
+
+       
+    }
+    else{
+        alert("Registeration Succesful")
+    }
+    
+
+    
+}
+
+</script>
+
+            
+
+
+
+
+
